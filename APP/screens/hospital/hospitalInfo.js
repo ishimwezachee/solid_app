@@ -25,10 +25,11 @@ const HospitalInfoScreen = ({ navigation }) => {
 					<OptionInput
 						placeholder={{ label: 'Hospital Name', value: null }}
 						itemSelect={[
-							{ label:'CHUK (Refral Hospital)' value: 'CHUK' },
+							{ label:'CHUK Refral Hospital' ,value: 'CHUK' },
 							{ label: 'Kibagabaga hosptial', value: 'Kibagabaga hosptial' },
-							{ label: 'Masaka hospitla', value: 'hockey' },{ label: 'Masaka hospitla', value: 'hockey' },
-							{ label: 'Masaka hospitla', value: 'hockey' }
+							{ label: 'Masaka hospitla', value: 'hockey' },
+							{ label: 'Masaka hospitla', value: 'hockey' },
+							{ label: 'Masaka hospitla', value: 'hockey' },
 							{ label: 'Muhima hospitla', value: 'hockey' },
 							{ label: 'Nyarugenge hospitla', value: 'hockey' }
 
