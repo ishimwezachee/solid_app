@@ -23,6 +23,7 @@ const Patient_Diet_screen = ({ navigation }) => {
 			<Card>
 				<View style={styles.Inputs}>
 					<OptionInput
+						itemSelect={{ label: 'Regular Diet', value: null }}
 						placeholder={{ label: 'Regular Diet', value: null }}
 						InputStyles={styles.InputStyles}
 						ViewStyle={styles.ViewStyle}
@@ -30,6 +31,7 @@ const Patient_Diet_screen = ({ navigation }) => {
 					/>
 
 					<OptionInput
+						itemSelect={{ label: 'Regular Diet', value: null }}
 						placeholder={{ label: 'Medical Diet', value: null }}
 						placeholderTextColor={colors.red}
 						InputStyles={styles.InputStyles}
@@ -37,6 +39,7 @@ const Patient_Diet_screen = ({ navigation }) => {
 						TextStyle={styles.TextStyle}
 					/>
 					<OptionInput
+						itemSelect={{ label: 'Regular Diet', value: null }}
 						placeholder={{ label: 'Religious diet', value: null }}
 						InputStyles={styles.InputStyles}
 						ViewStyle={styles.ViewStyle}
@@ -44,6 +47,7 @@ const Patient_Diet_screen = ({ navigation }) => {
 					/>
 
 					<OptionInput
+						itemSelect={{ label: 'Regular Diet', value: null }}
 						placeholder={{ label: 'vegeterian', value: null }}
 						placeholderTextColor={colors.red}
 						InputStyles={styles.InputStyles}
@@ -57,7 +61,7 @@ const Patient_Diet_screen = ({ navigation }) => {
 						text="send"
 						buttonStyle={styles.buttonStyle}
 						textStyle={styles.textStyle}
-						onPress={() => navigation.replace('userType')}
+						onPress={() => navigation.navigate('userType')}
 					/>
 				</View>
 			</Card>

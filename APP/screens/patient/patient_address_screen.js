@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Image } from 'react-native';
 
 import Button from '../../components/Button/button';
 import Input from '../../components/Input/input';
-import OptionInput from '../../components/OptionInput/optionInput';
+// import OptionInput from '../../components/OptionInput/optionInput';
 import Card from '../../components/Card/card';
 import colors from '../../constants/color';
 
