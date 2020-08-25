@@ -1,14 +1,12 @@
 import React from 'react';
-import { View, StyleSheet, Image } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import { View, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import colors from '../constants/color';
 
 const WelcomingScreen = ({ navigation }) => {
 	return (
-		<View style={styles.container}>
-			<View style={styles.iconView}>
-				{/* <Icon name="angle-right" style={styles.icon} onPress={() => console.log('button clicked')} /> */}
-			</View>
+		<TouchableOpacity style={styles.container} onPress={() => navigation.navigate('userType')}>
+			<View style={styles.iconView} />
 			<View style={styles.ImageContainer}>
 				<Image
 					style={{ width: 300, height: 300 }}
@@ -16,22 +14,23 @@ const WelcomingScreen = ({ navigation }) => {
 					resizeMode="contain"
 				/>
 			</View>
-		</View>
+		</TouchableOpacity>
 	);
 };
 
 WelcomingScreen.navigationOptions = (navigationData) => {
 	return {
-		headerTitle: () => (
-			<Icon
-				name="angle-right"
-				style={{ fontSize: 30, color: colors.red, marginLeft: '90%' }}
-				onPress={() => navigationData.navigation.navigate('userType')}
-			/>
-		),
-		headerStyle: {
-			backgroundColor: 'black'
-		}
+		header: () => null
+		// headerTitle: () => (
+		// 	<AntDesign
+		// 		name="rightcircle"
+		// 		style={{ fontSize: 30, color: colors.red, marginLeft: '90%' }}
+		// 		onPress={() => navigationData.navigation.navigate('userType')}
+		// 	/>
+		// ),
+		// headerStyle: {
+		// 	backgroundColor: 'black'
+		// }
 	};
 };
 

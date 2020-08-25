@@ -13,25 +13,46 @@ import HospitalScreen from '../screens/hospital/hospitalInfo';
 
 const MainNavigator = createStackNavigator({
 	welcome: {
-		screen: WelcomeScreen
+		screen: WelcomeScreen,
+		navigationOptions: {
+			headerShown: null
+		}
 	},
 	userType: {
-		screen: userTypeScreen
+		screen: userTypeScreen,
+		navigationOptions: {
+			headerShown: null
+		}
 	},
 	patientInfo: {
-		screen: PatientPersonalScreen
+		screen: PatientPersonalScreen,
+		navigationOptions: {
+			headerShown: null
+		}
 	},
 	personlAdress: {
-		screen: PatientAddressScreen
+		screen: PatientAddressScreen,
+		navigationOptions: {
+			headerShown: null
+		}
 	},
 	personalDiet: {
-		screen: PatientDietScreen
+		screen: PatientDietScreen,
+		navigationOptions: {
+			headerShown: null
+		}
 	},
 	careGiver: {
-		screen: CareGiverScreen
+		screen: CareGiverScreen,
+		navigationOptions: {
+			headerShown: null
+		}
 	},
-	hospital: {
-		screen: HospitalScreen
+	Hospital: {
+		screen: HospitalScreen,
+		navigationOptions: {
+			headerShown: null
+		}
 	}
 });
 

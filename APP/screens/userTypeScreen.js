@@ -17,7 +17,7 @@ const UserTypeScreen = ({ navigation }) => {
 			<View style={styles.nurse}>
 				<Button
 					text="Hospital"
-					onPress={() => navigation.navigate('hospital')}
+					onPress={() => navigation.navigate('Hospital')}
 					buttonStyle={styles.buttonStyle}
 					textStyle={styles.textStyle}
 				/>

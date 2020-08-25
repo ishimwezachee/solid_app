@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import RNPickerSelect from 'react-native-picker-select';
 
-const Dropdown = ({ ViewStyle, TextStyle, text, InputStyles, placeholder, itemSelect }) => {
+const Dropdown = ({ ViewStyle, InputStyles, placeholder, itemSelect }) => {
 	return (
 		<View style={ViewStyle}>
 			<View style={InputStyles}>

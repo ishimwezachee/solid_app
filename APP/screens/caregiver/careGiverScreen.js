@@ -29,7 +29,7 @@ const Patient_personal_screen = ({ navigation }) => {
 						TextStyle={styles.TextStyle}
 					/>
 					<OptionInput
-						itemSelect={{ label: 'Relationship to client', value: null }}
+						itemSelect={[ { label: 'Relationship to client', value: null } ]}
 						placeholder={{ label: 'Relationship to client', value: null }}
 						InputStyles={styles.InputStyles}
 						ViewStyle={styles.ViewStyle}

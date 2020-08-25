@@ -23,7 +23,7 @@ const Patient_Diet_screen = ({ navigation }) => {
 			<Card>
 				<View style={styles.Inputs}>
 					<OptionInput
-						itemSelect={{ label: 'Regular Diet', value: null }}
+						itemSelect={[ { label: 'Regular Diet', value: null } ]}
 						placeholder={{ label: 'Regular Diet', value: null }}
 						InputStyles={styles.InputStyles}
 						ViewStyle={styles.ViewStyle}
@@ -31,7 +31,7 @@ const Patient_Diet_screen = ({ navigation }) => {
 					/>
 
 					<OptionInput
-						itemSelect={{ label: 'Regular Diet', value: null }}
+						itemSelect={[ { label: 'Regular Diet', value: null } ]}
 						placeholder={{ label: 'Medical Diet', value: null }}
 						placeholderTextColor={colors.red}
 						InputStyles={styles.InputStyles}
@@ -39,7 +39,7 @@ const Patient_Diet_screen = ({ navigation }) => {
 						TextStyle={styles.TextStyle}
 					/>
 					<OptionInput
-						itemSelect={{ label: 'Regular Diet', value: null }}
+						itemSelect={[ { label: 'Regular Diet', value: null } ]}
 						placeholder={{ label: 'Religious diet', value: null }}
 						InputStyles={styles.InputStyles}
 						ViewStyle={styles.ViewStyle}
@@ -47,7 +47,7 @@ const Patient_Diet_screen = ({ navigation }) => {
 					/>
 
 					<OptionInput
-						itemSelect={{ label: 'Regular Diet', value: null }}
+						itemSelect={[ { label: 'Regular Diet', value: null } ]}
 						placeholder={{ label: 'vegeterian', value: null }}
 						placeholderTextColor={colors.red}
 						InputStyles={styles.InputStyles}
@@ -69,11 +69,11 @@ const Patient_Diet_screen = ({ navigation }) => {
 	);
 };
 
-Patient_Diet_screen.navigationOptions = (navigationData) => {
-	return {
-		header: () => null
-	};
-};
+// Patient_Diet_screen.navigationOptions = (navigationData) => {
+// 	return {
+// 		header: () => null
+// 	};
+// };
 
 const styles = StyleSheet.create({
 	container: {},
